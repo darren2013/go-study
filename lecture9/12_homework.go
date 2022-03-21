@@ -10,6 +10,7 @@ func main() {
 	for i := 0; i < 4; i++ {
 		defer fmt.Println("defer i = ", i)
 
+		//闭包里引用的，是变量的地址
 		defer func() {
 			fmt.Println("defer closure i=", i)
 		}()

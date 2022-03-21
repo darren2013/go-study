@@ -45,11 +45,16 @@ func (pc PhoneConnector) Name() string {
 }
 
 func (pc PhoneConnector) Connect() {
-	fmt.Println("connect")
+	fmt.Println("phone connect")
 }
 
 func (tv TVConnector) Connect() {
 	fmt.Println("tv connect")
+}
+
+func (tv TVConnector) Name() string {
+	fmt.Println("tv name", tv.name)
+	return tv.name
 }
 
 func diconnect(a interface{}) {

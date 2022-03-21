@@ -16,5 +16,5 @@ func main() {
 }
 
 func (tz *TZ) Print() {
-	fmt.Println("tz")
+	fmt.Println("tz", tz)
 }

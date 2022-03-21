@@ -18,4 +18,5 @@ func main() {
 	//a.Name只能访问到A里定义的name
 	fmt.Println(a.Name)
 	fmt.Println(a.B.Name)
+	fmt.Println(a)
 }

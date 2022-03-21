@@ -19,6 +19,7 @@ func main() {
 	fmt.Println(p)
 }
 
+//GO语言所有传递，都是值拷贝，如果想要引用，可以使用指针
 func A(p person) {
 	p.Age = 88
 }

@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+//结构体的属性，定义时最好大小，在外面能够直接访问
 type person struct {
 	Name string
 	Age  int

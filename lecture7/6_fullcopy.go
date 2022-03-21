@@ -11,6 +11,9 @@ func main() {
 
 	s3 := s1[:]
 
+	s5 := s1[1:5]
+
+	fmt.Printf("s2 add: %p,s3 add: %p,s5 add: %p", s2, s3, s5)
 	//slice是一个引用类型
 	s4 := s1
 

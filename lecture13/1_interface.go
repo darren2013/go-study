@@ -9,6 +9,7 @@ type USB interface {
 	Connect()
 }
 
+//结构体实现了接口的所有方法，就认为实现了该接口
 type PhoneConnector struct {
 	name string
 }

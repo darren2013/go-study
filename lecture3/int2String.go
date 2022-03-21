@@ -8,7 +8,7 @@ import (
 func main() {
 	var a int = 65
 	b := string(a)
-	fmt.Println(b)
+	fmt.Println("b's value is:" + b)
 
 	c := strconv.Itoa(a)
 	fmt.Println(c)

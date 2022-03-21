@@ -14,7 +14,8 @@ func main() {
 	}
 
 	for i := 0; i < 10; i++ {
-		<-c
+		//<-c
+		fmt.Println(i, <-c)
 	}
 }
 

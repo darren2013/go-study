@@ -13,5 +13,7 @@ func main() {
 		c <- true
 	}()
 
-	<-c
+	boolVal := <-c
+
+	fmt.Println("end....", boolVal)
 }

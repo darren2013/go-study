@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 )
 
 func main() {
@@ -11,7 +12,11 @@ func main() {
 	go func() {
 		fmt.Println("go go....")
 		<-c
+
+		fmt.Println("read from channel over...")
 	}()
 
-	c <- true
+	//c <- true
+
+	time.Sleep(2 * time.Second)
 }
